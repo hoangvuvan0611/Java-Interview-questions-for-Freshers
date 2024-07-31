@@ -84,6 +84,35 @@ Chứa các câu hỏi lý thuyết java cho phỏng vấn
     - Để ngăn chặn việc kế thừa trong java ta sẽ thêm keyword final
 
 ## Top 20 câu hỏi phỏng vấn Java OOP phổ biến nhất Link: (https://www.facebook.com/groups/devoiminhdidauthe/permalink/23937668312543548/)
+1. Thế nào là lập trình hướng đối tượng ?
+    - Lập trình hướng đối tượng là một phương pháp lập trình dựa trên khái niệm về lớp và đối tượng. Nó tập trung vào các đối tượng thao tác hơn là logic để thao tác chúng, giúp code dễ quản lý, tái sử dụng được và dễ bảo trì.
+2. CÁC TÍNH CHẤT CỦA HƯỚNG ĐỐI TƯỢNG LÀ GÌ ?
+    - Tính kế thừa
+    - Tính đóng gói
+    - Tính trừu tượng
+    - Tính đa hình
+3. Tính đóng gói?
+    - là việc gói gọn dữ liệu (biến) và các phương thức (hàm) thao tác trên dữ liệu đó bên trong 1 lớp. Điều này giúp bảo vệ dữ liệu khỏi việc truy cập trái phép và sửa đổi trực tiếp từ bên ngoài.
+    - Giúp đảm bảo tính toàn vẹn dữ liệu, chỉ cho phép thay đổi dữ liệu thông qua các phương thức được định nghĩa
+4. Tính kế thừa?
+    - Cho phép một lớp (lớp con) kế thừa các thuộc tính và phương thức của một lớp khác (lớp cha). Điều này giúp tái sử dụng mã nguồn, giảm sự trùng lặp và dễ dàng mở rộng.
+5. Tính đa hình?
+    - Tính đa hình cho phép một đối tượng có thể được xử lý theo nhiều kiểu khác nhau. Tính đa hình có 2 dạng chính là compile-time Overloading(nạp chồng) và runtime overriding(ghi đè).
+    - Cho phép dễ dàng bảo trì và mở rộng, cho phép một phương thức có thể hoạt động với nhiều kiểu dữ liệu khác nhau.
+6. Tính trừu tượng?
+    - Mục đính của tính trừu tượng là che dấu các chi tiết triển khai của một đối tượng và chỉ hiển thị các thuộc tính và phương thức cần thiết thông qua abstact class và interface.
+    - Giúp đơn giản hoá sự phức tạp bằng cách chỉ hiển thị những gì cần thiết. Giúp dễ dàng thay đổi và mở rộng mà không ảnh hưởng đến các phần khác của hệ thống
+7. Có mấy loại access modifier? Phân biệt sự khác nhau giữa chúng?
+    - Private: Chỉ có thể truy cập trong cùng class hoặc các inner class được truy cập
+    - Default: có thể truy cập trong cùng class và package
+    - Protected: Có thể truy cập trong cùng class, package và các class con.
+    - Public: có thể truy cập ở bất cứ đâu
+8. Có thể sử dụng constructor của lớp cha để tạo đối tượng cho lớp con không?
+    - Không thể sử dùng constructor của lớp cha để tạo mới đối tượng cho lớp con.
+    - Lớp con có thể sử dụng keyword super để gọi trực tiếp biến, phương thức và gọi constructor của class cha.
+9. Thế nào là static?
+    - Những method có từ khoá static sẽ thuộc về class có thể được truy cập trực tiếp từ Class mà không cần tạo đối tượng.
+10. Thế nào là final Những thuộc tính final sẽ không thể thay đổi được giá trị của nó, những method final sẽ không thể override ở lớp con và class final sẽ không thể được kế thừa.
 
 
 
