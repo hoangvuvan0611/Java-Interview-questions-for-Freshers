@@ -1,7 +1,7 @@
 # Java-Interview-questions-for-Freshers
 Chứa các câu hỏi lý thuyết java cho phỏng vấn
 
-## Cơ bản và cú pháp Java
+## Cơ bản và cú pháp Java (Geeksforgeek) https://www.geeksforgeeks.org/java-interview-questions/#java-interview-questions-for-freshers
 1. Java là một ngôn ngữ độc lập nền tảng như thế nào?
     - Độc lập nền tảng tức là java không phụ thuộc vào bất kì nền tảng nào (windows, linux hay macos..., các phần cứng).
     - Không như những ngôn ngữ khác, java có trình biên dịch JavaC, nó có nhiệm vụ biên dịch code ra mã bytecode (.class file) - Mã Bytecode này là trung gian giữa mã nguồn và các mã máy cụ thể khác nhau(Tức là từ mã bytecode có thể biên dịch ra nhiều mã máy khác nhau).
@@ -36,3 +36,69 @@ Chứa các câu hỏi lý thuyết java cho phỏng vấn
 10. e
 11. t
 12. 
+
+## Top 30 các câu hỏi phỏng vấn java thường gặp và cách trả lời (Vtiacademy) https://vtiacademy.edu.vn/top-30-cac-cau-hoi-phong-van-java-thuong-gap-va-cach-tra-loi.html
+### Các câu hỏi về java core
+1. Java là gì? Đặc điểm chính của Java là gì?
+    - Java là ngôn ngữ lập trình, là ngôn ngữ hướng đối tượng hoàn toàn, độc lập nền tảng.
+    - Java có hỗ trợ các tính năng đặc biệt như, quản lý bộ nhớ động GC, xử lý ngoại lệ Exception.
+    - Do là ngôn ngữ hướng đối tượng nên nó chứa đầy đủ các tính chất của lập trình hướng đối tượng với các tính chất như tính kế thừa, tính đóng gói, tính da hình, tính trừu tượng.
+    - Java không hỗ trợ đa kế thừa.
+2. Sự khác biệt giữa abstract class và interface trong java là gì?
+    - Abstract Class: là một class có thể chứa cả abstract method và method được triển khai cụ thể, đồng thời nó cũng có thể chứa các biến instance, constructor. Một class con chỉ có thể kế thừa 1 class. Các phương thức và thuộc tính của abstract class có thể có bất kỳ mức truy cập nào (default, public, private, protected).
+    - Interface: chỉ chứa các abstract method (trước java 8) và các default method từ java 8, phạm vi truy cập mặc định của phương thức là public abstract và các biến mặc định là public static final
+3. Khác biệt giữa == và .equals() trong Java?
+    - "==" sẽ so sánh địa chỉ ô nhớ của 2 đối tượng so sánh.
+    - "equals() sẽ so sánh giá trị của 2 đối tượng
+4. Java Memory Management hoạt động như thế nào?
+    - Java sử dụng Garbage Collection để quản lý bộ nhớ. khi đối tượng không còn được sử dụng thì GC sẽ tự động giải phóng bộ nhớ của đối tượng đó.
+5. Tại sao Java được gọi là ngôn ngữ đa luồng (multithreaded)?
+    - Java hỗ trợ việc xử lý đa luồng thông qua package java.lang.Thread, nó cho phép chương trình thực thi đồng thời nhiều tác vụ song song, tận dụng hiệu suất của hệ thống.
+    - Để triển khai luồng ta có thể extends Thread class hoặc implement Runnable. hoặc từ java 17 có thể triển khai virtual thread
+6. Phạm vi (scope) của biến trong Java là gì?
+    - Biến là cục bộ (local) khi được khai báo trong một method và sẽ bị huỷ sau khi method hoàn thành.
+    - Biến toàn cục (Global) khi được khai báo ở mức class
+7. Tại sao phương thức main() luôn là static trong Java?
+    - Phương thức main luôn có keyword static là vì static là method hoặc biến được khai báo thuộc về class chứ không phải bất kì object nào được tạo ra cho nên có thể sử dụng mà không cần khởi tạo object. Do main() là điểm khởi đầu của chương trình nên khi JVM chạy sẽ không cần tạo object của class chứa nó.
+8. Java có hỗ trợ đa kế thừa không?
+    - Java không hỗ trợ đa kế thừa cho class. Một class chỉ có thể kế thừa duy nhất 1 class khác nhưng có thể triển khai nhiều Interface.
+### Các câu hỏi phỏng vấn Java OOP
+1. OOP là gì và tại sao nó quan trọng trong Java?
+    - Là phương pháp lập trình tập trung vào việc tạo ra các đối tượng có thể tương tác với nhau. Chứa dữ liệu dưới dạng các trường và mã(method).
+2. Các tính chất cơ bản của OOP là gì?
+    - Tính kế thừa
+    - Tính đóng gói
+    - Tính trừu tượng
+    - Tính đa hình
+3. Kế thừa trong Java là gì?
+    - Đây là khả năng của một class mới (class con) có thể sử dụng các thuộc tính và phương thức của một class hiện có (class cha). Class con kế thừa từ class cha thông qua cơ chế kế thừa, cho phép tái sử dụng mã nguồn và xây dựng mối quan hệ giữa class cha và class con.
+4. Lớp là gì?
+    - Class là một bản mô tả của một đối tượng. nó định nghĩa các thuộc tính (dữ liệu) và phương thức (hành vi) của đối tượng đó
+5. Đối tượng trong java là gì?
+    - Object là thể hiện của class, nó bao gồm các thuộc tính và phương thức
+6. Có thể sử dụng thuộc tính trong Interface không?
+    - Có thể sử dụng thuộc tính trong interface nhưng phải được khai báo với từ khoá final.
+7. Interface có thể là final không?
+    - Interface không thể là final bởi vì nó cần có các implement class thì mới sử dụng được.
+8. Làm thế nào để ngăn chặn việc kế thừa trong java?
+    - Để ngăn chặn việc kế thừa trong java ta sẽ thêm keyword final
+
+## Top 20 câu hỏi phỏng vấn Java OOP phổ biến nhất Link: (https://www.facebook.com/groups/devoiminhdidauthe/permalink/23937668312543548/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
